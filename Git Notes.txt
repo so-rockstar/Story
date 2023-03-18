@@ -1,0 +1,41 @@
+in terminal run "git init"
+
+creates new .git file
+
+log in, basically, with git config or git --global config.
+git config user.email = "chris_hubley@live.ca"
+
+see what's in "staging area" (files that git will handle version control for)
+"git status"
+
+shows untracked files that you can add in red. need to add
+
+add files to tracking with "git add FILENAME"
+
+to add ALL files in directory to git use "git add ." (space before the .)
+
+then commit changes with 
+git commit -m "write your message" 
+the -m allows message. Important. note what is being changed such as "completed chapter 1"
+
+to see differences between versions
+git diff [FILENAME]
+
+to roll back to previous version
+git checkout [FILENAME]
+
+
+DOING GIT ON GITHUB (REMOTE)
+
+tell git that we have a remote repo on github
+git remote add origin https://github.com/so-rockstar/Story.git
+origin can be anything but just keep origin for convention
+paste url for github
+
+once established, push directory to online repo ("origin" is the name)
+git push -u origin master
+(so replace origin in this line with whatever is used in the one before)
+
+files now online
+
+
