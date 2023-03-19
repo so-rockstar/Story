@@ -38,4 +38,48 @@ git push -u origin master
 
 files now online
 
+PREVENT sensitive files from being uploaded using "git ignore" file. Ex a file with API keys, local settings, etc. create file:
+	touch .gitignore
+Once .gitignore file is created, you can add files to it. It's a text file so add file names within it.
+
+Now using "git add ." to add all will not include the ignored files (though it will include the gitignore file)
+Use asterisk to exclude all *.xxx (xxx = sensitive file type) files, for eg. You can use git status to see what will be committed
+
+CLONE RESPOSITORY TO LOCAL SYSTEM
+Pulls from remote repo on github to local system
+Go to Git Hub and find repo. Click <>Code button and copy URL
+terminal -> cd into directory. git clone [URL]
+Once repo is cloned you can use git log to see history of commits
+
+BRANCHES/BRANCHING
+E.g. when you want to try new feature or mess around without commiting changes to master branch. You create a side branch. Can keep working on main branch at same time.
+Can then merge the second (or other) branches back to main branch
+git branch [name-of-branch]
+see branges by just writing git branch
+switch to the new branch with git checkout [name-of-branch] OR git switch [name-of-branch]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
